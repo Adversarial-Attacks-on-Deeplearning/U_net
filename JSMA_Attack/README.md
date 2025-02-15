@@ -38,7 +38,7 @@ def saliency_map(jacobian, target_label):
 
 ## Threat Model
 We apply a targeted misclassification attack that Forces the DNN to classify the input into a specific target class. 
-In the case of binary image segmentation it tries to make the model predict some pixels as class 1 depending on the targeted mask.
+In the case of binary image segmentation it tries to make the model predict some pixels as class 1 or 0 depending on the targeted mask.
 
 ## Algorithm: 
 The JSMA attack iteratively perturbs input features based on the adversarial saliency map until the DNN misclassifies the input into the target class or a maximum distortion threshold is reached.
@@ -48,8 +48,8 @@ Steps:
   1) Compute the element-wise gradients of the output w.r.t input image
   2) Construct the adversarial saliency map based on the targeted mask
   3) Select the most salient feature(s) to perturb).
-  4) Modify the selected feature(s) by an initial small amount θ.
-  5) Repeat until the requered accuracy or the distortion limit is reached.
+  4) Modify the selected feature(s) by θ.
+  5) Repeat until the distortion limit is reached.
 
   
   
