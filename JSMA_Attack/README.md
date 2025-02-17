@@ -17,7 +17,7 @@ $$
 J_F(X) = \frac{\partial F(X)}{\partial X} = 
 \begin{bmatrix}
 \frac{\partial F_1}{\partial x_1} & \cdots & \frac{\partial F_1}{\partial x_n} \\
-\frac{\partial E_1}{\partial x_1} & \cdots & \frac{\partial E_1}{\partial x_n} \\
+\frac{\partial F_2}{\partial x_1} & \cdots & \frac{\partial F_2}{\partial x_n} \\
 \vdots & \ddots & \vdots \\
 \frac{\partial F_m}{\partial x_1} & \cdots & \frac{\partial F_m}{\partial x_n}
 \end{bmatrix}
@@ -61,10 +61,12 @@ The JSMA attack iteratively perturbs input features based on the adversarial sal
   5) Repeat until the distortion limit is reached.
 
 ## Results
+
 Targeted mask used:
+
 ![targeted_mask](https://github.com/user-attachments/assets/06713b28-e39b-4b45-8fef-0c954aa554fd)
 
-1) Setting theta = 1, and maximum total distribution = 4.15%
+1) Setting theta = 1, and maximum total distribution = 4.15% (The minimum achieved in Papernot et al)
 ![JSMA](https://github.com/user-attachments/assets/894e2a68-e65d-4f1b-9d93-11b48970c369)
 
 2) Setting theta = 0.05 and maximum total distribution = 20%, while adding limit on distribution per pixel = 12.549%
