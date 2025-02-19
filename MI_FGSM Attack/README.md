@@ -41,4 +41,4 @@ $$
 Degradation in accuracy of adversarial example for MI_FGSM vs I_FGSM with number of iterations
 ![Untitled](https://github.com/user-attachments/assets/88832fab-503b-4a8a-873b-7c3d0ff5eb33)
 
-![IFGSM_vs_MIFGSM_1_acc=46 69 42 58](https://github.com/user-attachments/assets/8666725e-f989-428d-ad5e-71c21e4863b0)
+![IFGSM_vs_MIFGSM_1_acc=41 7 69 49 45](https://github.com/user-attachments/assets/58664ebd-91c9-4291-a0e6-164323c7976a)
